@@ -15,15 +15,15 @@ model_selection = st.sidebar.selectbox("Model Selection", options=["gpt-4o-mini"
 
 # URL input options
 url_options = {
-        'https://www.diekaelte.de/',
-        'https://www.tga-fachplaner.de/',
-        'https://www.kka-online.info/',
-        'https://www.tab.de/',
-        'https://www.ki-portal.de/',
-        'https://www.tga-praxis.de/',
-        'https://kem.industrie.de/',
-        'https://industrieanzeiger.industrie.de/',
-        'https://www.coolingpost.com/world-news/'
+        "https://www.diekaelte.de/",
+        "https://www.tga-fachplaner.de/",
+        "https://www.kka-online.info/",
+        "https://www.tab.de/",
+        "https://www.ki-portal.de/",
+        "https://www.tga-praxis.de/",
+        "https://kem.industrie.de/",
+        "https://industrieanzeiger.industrie.de/",
+        "https://www.coolingpost.com/world-news/"
 }
 
 url_input = st.sidebar.selectbox("Select URL", options=list(url_options.values()), format_func=lambda url: [key for key, value in url_options.items() if value == url][0])
