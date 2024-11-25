@@ -25,8 +25,18 @@ url_options = {
         "https://industrieanzeiger.industrie.de/",
         "https://www.coolingpost.com/world-news/"
 }
+# Debug type of url_options
+st.write(f"url_options type: {type(url_options)}")
 
-url_input = st.sidebar.selectbox("Select URL", options=list(url_options.values()), format_func=lambda url: [key for key, value in url_options.items() if value == url][0])
+# Create a selectbox for URL selection
+url_input = st.sidebar.selectbox(
+    "Select URL",
+    options=list(url_options.values()),
+    format_func=lambda url: [key for key, value in url_options.items() if value == url][0]
+)
+
+# Display selected URL
+st.write(f"Selected URL: {url_input}")
 
 # Tags input specifically in the sidebar
 tags = st.sidebar.empty()  # Create an empty placeholder in the sidebar
