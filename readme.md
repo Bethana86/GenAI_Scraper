@@ -1,2 +1,2 @@
-🔗 https://genai_scraper.streamlit.app/
+🔗 https://genai-scraper.streamlit.app/
  
